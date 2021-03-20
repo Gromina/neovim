@@ -21,7 +21,7 @@ let mapleader = ','
 let maplocalleader = '  ' " tab key
 
 if has('mac')
-  set macmeta "command and alt keys should mean the same
+" set macmeta "command and alt keys should mean the same
 endif
 
 " history/undo settings
@@ -69,6 +69,7 @@ set backspace=indent,eol,start
 " indent settings
 set autoindent
 "set foldmethod=indent
+set nofoldenable
 
 
 " Visual settings
@@ -181,6 +182,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'hashivim/vim-terraform'
 
 
 " theming
@@ -197,3 +199,7 @@ let g:airline#extensions#keymap#enabled = 0 "Не показывать теку�
 let g:airline_section_z = "\ue0a1:%l/%L Col:%c" "Кастомная графа положения курсора
 let g:Powerline_symbols='unicode' "Поддержка unicode
 let g:airline#extensions#xkblayout#enabled = 0 "Про это позже расскажу
+
+
+" Testing
+Plug 'dylanaraps/fff.vim'

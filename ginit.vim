@@ -2,7 +2,7 @@
 set guioptions=cMg "console dialogs, do not show menu or toolbar
 
 if has('mac')
-    set guifont=Menlo\ Regular:h22
+    set guifont=Menlo:h22
 elseif has('win32')
     set guifont=Consolas:h20:cRUSSIAN
 else
